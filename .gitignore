@@ -1,0 +1,10 @@
+/.htaccess
+/node_modules
+/google*.html
+/images
+/lightbox
+/owl-carousel2
+/slick-carousel
+/fonts
+/ico
+/js/external

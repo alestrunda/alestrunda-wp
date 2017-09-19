@@ -1,0 +1,51 @@
+.bg-addition {
+    background-image: url('images/bg_addition_960.jpg');
+
+    @include break-min(backgrounds) {
+        background-image: url('images/bg_addition_1920.jpg');
+    }
+}
+
+.bg-citation {
+    background-image: url('images/bg_citation_1920.jpg');
+}
+
+.bg-contact {
+    background-image: url('images/bg_contact_960.jpg');
+
+    @include break-min(backgrounds) {
+		background-image: url('images/bg_contact_1800.jpg');
+    }
+}
+
+.bg-development {
+    background-image: url('images/bg_development_1920.jpg');
+}
+
+.bg-fixed {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    background-attachment: fixed;
+
+    html.touch & {
+        background-attachment: scroll;
+    }
+}
+
+.bg-parallax {
+    position: relative;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 0;
+
+    html.touch & {
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.bg-stats {
+    background-image: url('images/bg_stats_1920.jpg');
+}

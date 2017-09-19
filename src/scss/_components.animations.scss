@@ -1,0 +1,49 @@
+.animated,
+.animated--pseudo::after,
+.animated--pseudo::before {
+	animation-duration: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+}
+
+.animated--faded {
+    opacity: 1;
+}
+
+.animated--speed-mid {
+    animation-duration: 1s;
+
+    &.animated--pseudo {
+        &::after,
+        &::before {
+            animation-duration: 1s;
+        }
+    }
+}
+
+.anim-fade-in {
+    animation-name: fadeIn;
+}
+
+.anim-fade-in-left {
+    animation-name: fadeInLeft;
+}
+
+.anim-fade-in-right {
+    animation-name: fadeInRight;
+}
+
+.anim-fade-in-up {
+    animation-name: fadeInUp;
+}
+
+.anim-list-check {
+    &::after {
+        animation-name: listCheckIcon;
+    }
+
+    &::before {
+        animation-name: listCheckCircle;
+    }
+}

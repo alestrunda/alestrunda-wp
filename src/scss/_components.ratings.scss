@@ -1,0 +1,71 @@
+.rating {
+    display: block;
+    position: relative;
+	height: 18px;
+	width: 90px;
+	background-image: url('images/star_void.png');
+	background-position: left center;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+
+    &::after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('images/star.png');
+        background-position: left center;
+        background-repeat: repeat-x;
+        background-size: auto 100%;
+        content: '';
+    }
+
+    @include retina() {
+        background-image: url('images/star_void@2x.png');
+
+        &::after {
+            background-image: url('images/star@2x.png');
+        }
+    }
+}
+
+.rating--0::after {
+	width: 0;
+}
+
+.rating--1::after {
+	width: 10%;
+}
+
+.rating--2::after {
+	width: 20%;
+}
+
+.rating--3::after {
+	width: 30%;
+}
+
+.rating--4::after {
+	width: 40%;
+}
+
+.rating--5::after {
+	width: 50%;
+}
+
+.rating--6::after {
+	width: 60%;
+}
+
+.rating--7::after {
+	width: 70%;
+}
+
+.rating--8::after {
+	width: 80%;
+}
+
+.rating--9::after {
+	width: 90%;
+}

@@ -1,0 +1,89 @@
+.tooltip {
+    position: relative;
+
+    &::after,
+    &::before {
+        position: absolute;
+        bottom: -14px;
+        left: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-out;
+        pointer-events: none;
+        @include z-index(tooltip);
+    }
+
+    &::after {
+        transform: translate(-50%, 100%);
+        content: attr(data-title);
+        background-color: $color-tooltip;
+        color: #000;
+        border-radius: 4px;
+        white-space: nowrap;
+        font-size: 12px;
+        line-height: 1.4;
+        padding: 3px 8px;
+    }
+
+    &::before {
+        color: $color-tooltip;
+        transform: translateX(-50%);
+        border: 5px solid transparent;
+        border-bottom-color: currentColor;
+        content: '';
+    }
+
+    &:hover {
+        &::after,
+        &::before {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.tooltip--dark{
+    &::after {
+        color: #fff;
+        background-color: $color-tooltip-dark;
+    }
+
+    &::before {
+        color: $color-tooltip-dark;
+    }
+}
+
+.tooltip--left {
+    &::after,
+    &::before {
+        left: -10px;
+        bottom: 50%;
+    }
+
+    &::after {
+        transform: translate(-100%, 50%);
+    }
+
+    &::before {
+        border-bottom-color: transparent;
+        border-left-color: currentColor;
+        transform: translateY(50%);
+    }
+}
+
+.tooltip--top {
+    &::after,
+    &::before {
+        bottom: auto;
+        top: -10px;
+    }
+
+    &::after {
+        transform: translate(-50%, -100%);
+    }
+
+    &::before {
+        border-bottom-color: transparent;
+        border-top-color: currentColor;
+    }
+}

@@ -1,0 +1,28 @@
+.loader-page {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+    left: 0;
+	background-color: #fff;
+	background-image: url('images/loader.gif');
+	background-repeat: no-repeat;
+    background-position: center;
+    @include z-index(loader-page);
+}
+
+.loader-page__hide {
+    position: absolute;
+	right: 7px;
+	bottom: 5px;
+	padding: 7px;
+	cursor: pointer;
+	font-size: 17px;
+	color: $color-dark;
+}
+
+.loader-page__icon {
+    color: $color-red;
+	font-size: 20px;
+	margin-right: 3px;
+}

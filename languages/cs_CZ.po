@@ -1,0 +1,311 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: alestrunda\n"
+"POT-Creation-Date: 2016-11-23 20:53+0100\n"
+"PO-Revision-Date: 2017-03-12 16:05+0100\n"
+"Last-Translator: Aleš Trunda <alestrunda@gmail.com>\n"
+"Language-Team: \n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../404.php:7
+msgid "Page not found"
+msgstr "Stránka nenalezena"
+
+#: ../404.php:15
+#, php-format
+msgid ""
+"Sorry, requested page was not found, please continue to the %sfront page%s."
+msgstr ""
+"Omlouváme se, ale požadovaná stránka nebyla nalezena, prosím pokračujte na "
+"%súvodní stranu%s."
+
+#: ../404.php:17
+#, php-format
+msgid ""
+"In case something seems to be wrong, let me know - %scontact form%s, thanks."
+msgstr ""
+"Pokud se Vám zdá, že je zde něco špatně, dejte mi vědět - %skontaktní "
+"formulář%s, děkuji."
+
+#: ../archive.php:21
+msgid "Prev"
+msgstr "Předchozí"
+
+#: ../archive.php:22
+msgid "Next"
+msgstr "Další"
+
+#: ../archive.php:26
+msgid "No posts"
+msgstr "Žádné příspěvky"
+
+#: ../content-work.php:18
+msgid "Project Specs"
+msgstr "Parametry projektu"
+
+#: ../content-work.php:20
+msgid "Date"
+msgstr "Datum"
+
+#: ../content-work.php:30
+msgid "Technology"
+msgstr "Technologie"
+
+#: ../content-work.php:45 ../functions/custom_posts.php:194
+msgid "Client"
+msgstr "Klient"
+
+#: ../content-work.php:56 ../functions/custom_posts.php:196
+msgid "Website"
+msgstr "Webová stránka"
+
+#: ../content.php:28 ../functions/shortcodes/latest_news.php:45
+msgid "Read more"
+msgstr "Číst více"
+
+#: ../functions/custom_posts.php:11
+msgid "Testimonials"
+msgstr ""
+
+#: ../functions/custom_posts.php:12
+msgid "Testimonial"
+msgstr ""
+
+#: ../functions/custom_posts.php:24
+msgid "Top Slides"
+msgstr ""
+
+#: ../functions/custom_posts.php:25
+msgid "Top Slide"
+msgstr ""
+
+#: ../functions/custom_posts.php:37
+msgid "Works"
+msgstr ""
+
+#: ../functions/custom_posts.php:38
+msgid "Work"
+msgstr ""
+
+#: ../functions/custom_posts.php:50
+msgctxt "taxonomy general name"
+msgid "Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:51
+msgctxt "taxonomy singular name"
+msgid "Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:52
+msgid "Search Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:53
+msgid "Popular Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:54
+msgid "All Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:57
+msgid "Edit Technology"
+msgstr ""
+
+#: ../functions/custom_posts.php:58
+msgid "Update Technology"
+msgstr ""
+
+#: ../functions/custom_posts.php:59
+msgid "Add New Technology"
+msgstr ""
+
+#: ../functions/custom_posts.php:60
+msgid "New Technology Name"
+msgstr ""
+
+#: ../functions/custom_posts.php:61
+msgid "Separate technologies with commas"
+msgstr ""
+
+#: ../functions/custom_posts.php:62
+msgid "Add or remove technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:63
+msgid "Choose from the most used technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:64
+msgid "No technologies found."
+msgstr ""
+
+#: ../functions/custom_posts.php:65
+msgid "Technologies"
+msgstr ""
+
+#: ../functions/custom_posts.php:91
+msgid "Page Options"
+msgstr ""
+
+#: ../functions/custom_posts.php:130
+msgid "Subheading"
+msgstr ""
+
+#: ../functions/custom_posts.php:141
+msgid "Author Detail"
+msgstr ""
+
+#: ../functions/custom_posts.php:143
+msgid "Testimonial Order"
+msgstr ""
+
+#: ../functions/custom_posts.php:153
+msgid "Slide Order"
+msgstr ""
+
+#: ../functions/custom_posts.php:174
+msgid "Work Preview Text"
+msgstr ""
+
+#: ../functions/custom_posts.php:176
+msgid "Lightbox Img"
+msgstr ""
+
+#: ../functions/custom_posts.php:178
+msgid "Buy Online"
+msgstr ""
+
+#: ../functions/custom_posts.php:180
+msgid "Buy Online Text"
+msgstr ""
+
+#: ../functions/custom_posts.php:182
+msgid "Pages List"
+msgstr ""
+
+#: ../functions/custom_posts.php:184
+msgid "Live Preview"
+msgstr ""
+
+#: ../functions/custom_posts.php:186
+msgid "Live Preview No-follow"
+msgstr ""
+
+#: ../functions/custom_posts.php:188
+msgid "WordPress"
+msgstr ""
+
+#: ../functions/custom_posts.php:190
+msgid "Work Rating"
+msgstr ""
+
+#: ../functions/custom_posts.php:192
+msgid "Work Rating Text"
+msgstr ""
+
+#: ../functions/shortcodes/portfolio.php:12
+msgid "All"
+msgstr "Vše"
+
+#: ../functions/shortcodes/portfolio.php:26
+msgid "Show all filters"
+msgstr "Zobrazit všechny filtry"
+
+#: ../functions/shortcodes/portfolio.php:70
+msgid "Full picture"
+msgstr "Velký náhled"
+
+#: ../functions/shortcodes/portfolio.php:80
+msgid "Buy online"
+msgstr "Koupit online"
+
+#: ../functions/shortcodes/portfolio.php:93
+msgid "List of all pages"
+msgstr "Seznam všech stránek"
+
+#: ../functions/shortcodes/portfolio.php:103
+msgid "Live preview"
+msgstr "Vidět živě"
+
+#: ../functions/shortcodes/portfolio.php:112
+msgid "WordPress live preview"
+msgstr "WordPress vidět živě"
+
+#: ../functions/shortcodes/portfolio.php:118
+msgid "Details"
+msgstr "Podrobnosti"
+
+#: ../functions/theme_settings.php:7
+msgid "Codes"
+msgstr ""
+
+#: ../functions/theme_settings.php:16
+msgid "Google Analytics code"
+msgstr ""
+
+#: ../functions/theme_settings.php:26 ../functions/theme_settings.php:35
+msgid "Site description"
+msgstr ""
+
+#: ../header.php:33
+msgid "hide loading"
+msgstr "schovat načítání"
+
+#: ../index.php:23
+msgid "Welcome"
+msgstr "Úvod"
+
+#: ../index.php:26
+msgid "About me"
+msgstr "O mně"
+
+#: ../index.php:29
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: ../index.php:32
+msgid "News"
+msgstr "Novinky"
+
+#: ../index.php:35
+msgid "Services"
+msgstr "Služby"
+
+#: ../index.php:38
+msgid "Contact"
+msgstr "Kontakt"
+
+#: ../index.php:93
+msgid "Explore"
+msgstr "Prohlédnout web"
+
+#: ../index.php:227
+msgid "All news"
+msgstr "Všechny novinky"
+
+#~ msgid "Home"
+#~ msgstr "Domů"
+
+#~ msgid "Previous page"
+#~ msgstr "Předchozí strana"
+
+#~ msgid "Next page"
+#~ msgstr "Další strana"
+
+#~ msgid "Additional"
+#~ msgstr "Dodatek"
+
+#~ msgid "link"
+#~ msgstr "odkaz"

@@ -1,0 +1,11 @@
+.flags-container {
+	position: absolute;
+	right: 15px;
+	top: 120px;
+	@include z-index(flags);
+
+	@include break(sm) {
+		top: 110px;
+		right: 5px;
+	}
+}

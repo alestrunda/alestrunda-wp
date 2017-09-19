@@ -1,0 +1,73 @@
+.icon-box {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    width: 30px;
+	height: 30px;
+	text-align: center;
+	background-color: $color-main;
+    color: #fff;
+    text-decoration: none;
+}
+
+    .icon-box--hover:hover {
+        color: $color-darker;
+    }
+
+.icon-box__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: none;
+}
+
+.icon-opening {
+    padding: 0 25px 0 86px;
+	display: inline-block;
+	position: relative;
+	text-align: left;
+
+    &::after {
+        position: absolute;
+        top: 50%;
+        left: 25px;
+        margin-top: -18px;
+        line-height: 36px;
+        font-size: 36px;
+        text-align: left;
+        color: $color-main;
+        font-family: 'FontAwesome';
+        transition: all 0.4s ease-out;
+
+        .box-service:hover & {
+            color: #fff;
+        }
+    }
+}
+
+.icon-opening--check::after {
+	content: '\f00c';
+}
+
+.icon-opening--clock::after {
+	content: '\f017';
+}
+
+.icon-opening--cogs::after {
+	content: '\f085';
+}
+
+.icon-opening--cubes::after {
+    content: '\f1b3';
+}
+
+.icon-opening--wp::after {
+	content: '\f19a';
+}
+
+.icon-simple {
+    position: relative;
+    margin-right: 10px;
+    color: $color-main;
+}

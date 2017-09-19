@@ -1,0 +1,47 @@
+.flags-container {
+    .qtranxs_image {
+        width: 40px;
+        height: 40px;
+        float: right;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: scale(0.9);
+        transition: all 0.2s ease-out;
+
+        &:hover {
+            transform: scale(1);
+        }
+    }
+
+    .qtranxs_image_CS {
+        background-image: url('images/flags/cz.png');
+
+        @include retina() {
+            background-image: url('images/flags/cz@2x.png');
+        }
+    }
+
+    .qtranxs_image_en {
+        background-image: url('images/flags/gb.png');
+
+        @include retina() {
+            background-image: url('images/flags/gb@2x.png');
+        }
+    }
+
+    .qtranxs_language_chooser {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        img {
+            display: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+    }
+}

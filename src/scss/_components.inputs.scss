@@ -1,0 +1,25 @@
+.input-captcha {
+    margin-bottom: 18px;
+}
+
+.input-text {
+    display: block;
+    width: 100%;
+    color: $color-input;
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 1px $color-text solid;
+	border-radius: 4px;
+	padding: 10px 15px;
+	margin-bottom: 20px;
+	transition: all ease-out 0.2s;
+
+    &:focus {
+        outline: none;
+    	background-color: rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0 4px rgba(122, 122, 122, 0.8);
+    }
+}
+
+.input-textarea {
+    height: 160px;
+}

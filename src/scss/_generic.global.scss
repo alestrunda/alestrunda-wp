@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+	backface-visibility: hidden;
+}
+
+.el-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.el-full {
+	display: block;
+	width: 100%;
+}
+
+.el-relative {
+	position: relative;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}

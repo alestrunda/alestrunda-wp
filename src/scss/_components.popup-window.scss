@@ -1,0 +1,79 @@
+.popup-window {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	width: 90%;
+	max-width: 600px;
+	background-color: #fff;
+	text-align: center;
+	padding: 15px 23px 18px;
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-in;
+	transform: translate(-50%, 25px) scale(0.9, 0.8);
+    @include z-index(popup-window);
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0) scale(1);
+	}
+
+	@include break(md) {
+		padding-left: 18px;
+		padding-right: 18px;
+	}
+
+	@include break(sm) {
+		padding-left: 13px;
+		padding-right: 13px;
+	}
+}
+
+.popup-window__icon {
+	height: 120px;
+	background-position: center center;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	margin-top: 20px;
+	margin-bottom: 35px;
+}
+
+	.popup-window__icon--globe-www {
+		background-image: url('images/icon_globe_www.svg');
+	}
+
+	.popup-window__icon--internet-speed {
+		background-image: url('images/icon_internet_speed.svg');
+	}
+
+	.popup-window__icon--technical-support {
+		background-image: url('images/icon_technical_support.svg');
+	}
+
+.popup-window-close {
+    position: absolute;
+	top: 2px;
+	right: 2px;
+	opacity: 0.45;
+	font-size: 22px;
+	line-height: 22px;
+	padding: 5px 10px;
+	cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+        opacity: 1;
+	}
+
+	@include break(sm) {
+		top: 0;
+		right: 0;
+		padding: 3px 8px;
+	}
+}
+
+.popup-window-trigger {
+    cursor: pointer;
+}

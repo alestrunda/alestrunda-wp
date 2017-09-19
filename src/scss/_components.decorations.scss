@@ -1,0 +1,134 @@
+.decoration-border {
+	position: absolute;
+	width: 43px;
+    height: 43px;
+	pointer-events: none;
+    overflow: hidden;
+
+    &::after,
+    &::before {
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background-color: $color-main;
+        transition: all 0.2s ease-out;
+        content: '';
+    }
+}
+
+    .decoration-border--big {
+        width: 43px;
+
+        &::after {
+            height: 5px;
+        }
+
+        &::before {
+            height: 5px;
+        }
+    }
+
+    .decoration-border--mid {
+        width: 28px;
+
+        &::after {
+            height: 5px;
+        }
+
+        &::before {
+            height: 5px;
+        }
+    }
+
+    .decoration-border--small {
+        width: 15px;
+
+        &::after {
+            height: 6px;
+        }
+
+        &::before {
+            height: 6px;
+        }
+    }
+
+    .decoration-border--smaller {
+         width: 40px;
+
+        &::after {
+            height: 7px;
+        }
+
+        &::before {
+            height: 7px;
+        }
+    }
+
+    .decoration-border--tiny {
+        width: 18px;
+
+        &::after {
+            height: 3px;
+        }
+
+        &::before {
+            height: 3px;
+        }
+    }
+
+    .decoration-border--white {
+        &::after,
+        &::before {
+            background-color: #fff;
+        }
+    }
+
+.decoration-border--bottom {
+	bottom: 0;
+	right: 0;
+
+    &::after,
+    &::before {
+        bottom: 0;
+        right: 0;
+    }
+
+    &::before {
+        transform-origin: right bottom;
+        transform: rotate(90deg) translateY(100%);
+    }
+
+    .work & {
+        transition: all 0.2s ease-out;
+        transform: translate(10px, 10px);
+    }
+
+    .work:hover & {
+        transform: translate(0, 0);
+    }
+}
+
+.decoration-border--top {
+	top: 0;
+	left: 0;
+
+    &::after,
+    &::before {
+        top: 0;
+        left: 0;
+    }
+
+    &::before {
+        transform-origin: left top;
+        transform: rotate(90deg) translateY(-100%);
+    }
+
+    .work & {
+        transition: all 0.2s ease-out;
+        transform: translate(-10px, -10px);
+    }
+
+    .work:hover & {
+        transform: translate(0, 0);
+    }
+}

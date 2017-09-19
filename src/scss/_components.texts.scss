@@ -1,0 +1,51 @@
+.text-big {
+	font-size: 18px;
+}
+
+.text-black {
+	color: $color-dark;
+}
+
+.text-gray-light {
+	color: $color-gray-light;
+}
+
+.text-highlight {
+	display: inline-block;
+	background-color: $color-main;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 28px;
+	margin: 4px 7px;
+	line-height: 1.7;
+	font-size: inherit;
+
+	@include break(sm) {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+
+.text-huge {
+	font-size: 48px;
+}
+
+.text-silver {
+	color: $color-silver;
+}
+
+.text-small {
+	font-size: 10px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-xlarge {
+	font-size: 80px;
+}

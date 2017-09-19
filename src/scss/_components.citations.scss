@@ -1,0 +1,92 @@
+.citation {
+	color: $color-dark;
+	font-weight: 300;
+    font-size: 18px;
+
+    @include break(md) {
+        font-size: 17px;
+    }
+
+    @include break(sm) {
+        font-size: 16px;
+    }
+}
+
+    .citation--huge {
+        padding-left: 120px;
+        padding-right: 120px;
+        font-size: 32px;
+
+        @include break(lg) {
+            padding-left: 90px;
+            padding-right: 90px;
+        }
+
+        @include break(md) {
+            padding-left: 50px;
+            padding-right: 50px;
+            font-size: 28px;
+        }
+
+        @include break(sm) {
+            font-size: 24px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        @include break(xs) {
+            font-size: 20px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+.citation__author {
+	display: inline-block;
+	position: relative;
+	color: $color-main;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: 0 13px;
+
+    &::after,
+    &::before {
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        width: 6px;
+        height: 2px;
+        background-color: $color-main;
+        content: '';
+    }
+
+    &::after {
+        left: 0;
+    }
+
+    &::before {
+        right: 0;
+    }
+
+    .citation--huge & {
+        margin-top: 15px;
+        font-size: 21px;
+
+        @include break(sm) {
+            font-size: 19px;
+        }
+
+        @include break(xs) {
+            font-size: 17px;
+            margin-top: 10px;
+        }
+    }
+}
+
+.citation__author-info {
+	padding-left: 4px;
+	text-transform: none;
+	font-weight: normal;
+	color: $color-text;
+}

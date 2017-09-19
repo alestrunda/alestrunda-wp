@@ -1,0 +1,14 @@
+body {
+	line-height: 1.42857143;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	background-color: $color-bg;
+	color: $color-text;
+	height: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

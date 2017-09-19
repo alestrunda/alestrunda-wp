@@ -1,0 +1,71 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.1;
+	color: $color-dark;
+
+	.section-dark & {
+		color: #fff;
+	}
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 36px;
+	text-transform: uppercase;
+
+	@include break(md) {
+		font-size: 28px;
+	}
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 21px;
+	margin-top: 25px;
+
+	@include break(md) {
+		font-size: 19px;
+	}
+}
+
+h3 {
+	font-size: 21px;
+	font-weight: normal;
+
+	@include break(md) {
+		font-size: 19px;
+	}
+}
+
+h4,
+h5,
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 18px;
+	margin-top: 15px;
+
+	@include break(md) {
+		font-size: 16px;
+	}
+}
