@@ -43,7 +43,9 @@
 		//scroll to anchor
 		$('.scroll-to').on('click', function(e) {
 			e.preventDefault();
-			$.scrollTo($(this).attr('href'), 800, {offset: {top:-60} });
+			$('html, body').animate({
+				scrollTop: $($(this).attr('href')).offset().top - 60
+			}, 800);
 		});
 				
 		//on-scroll animations
