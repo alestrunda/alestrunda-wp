@@ -152,11 +152,17 @@
 			]
 		});
 		
+		var $btn_multiple_filter = $('#btn-multiple-filter');
 		//show all filters for works
 		$('#show-all-works-filters').on('click', function(e) {
 			e.preventDefault();
 			$(this).hide();
+			$btn_multiple_filter.show();
 			$('#works-filters .list-filters__item--secondary').removeClass('list-filters__item--secondary');
+		});
+
+		$btn_multiple_filter.on('click', function() {
+			$(this).toggleClass('toggled');
 		});
 		
 		//popup windows
@@ -216,16 +222,38 @@
 	
 	$(window).load(function(e) {
 		//portfolio works filter
+		var $btn_multiple_filter = $('#btn-multiple-filter');
+		var $isotope_filter_root = $('#works-filters');
 		var isotopeEl = $('#works').isotope({
 			itemSelector: '.work-item',
 			layoutMode: 'fitRows'
 		});
 		$('.isotope-filter').on('click', function(e) {
 			e.preventDefault();
-			var parentLiEl = $(this).parent('li');
-			parentLiEl.parent('.list-filters').children('.active').removeClass('active');
-			parentLiEl.addClass('active');
-			isotopeEl.isotope({ filter: $(this).data('filter') });
+			var parent_li_el = $(this).parent('li');
+			if($btn_multiple_filter.hasClass('toggled')) {
+				if(parent_li_el.hasClass('list-filters__item--all')) {
+					$isotope_filter_root.children('.active').removeClass('active');
+					parent_li_el.addClass('active');
+				}
+				else {
+					parent_li_el.toggleClass('active');
+					if($isotope_filter_root.children('.active').length === 0)
+						$isotope_filter_root.children('.list-filters__item--all').addClass('active');
+					else
+						$isotope_filter_root.children('.list-filters__item--all').removeClass('active');
+				}
+			} else {
+				$isotope_filter_root.children('.active').removeClass('active');
+				parent_li_el.addClass('active');
+			}
+			var filterStr = "";
+			$isotope_filter_root.children('.list-filters__item').each(function() {
+				if(!$(this).hasClass('active'))
+					return;
+				filterStr += $(this).children('.isotope-filter').data('filter');
+			});
+			isotopeEl.isotope({ filter: filterStr });
 			$(window).trigger('resize');
 		});
 		

@@ -58,3 +58,22 @@
 	    transform: rotate(360deg) scale(1.05);
     }
 }
+
+.button-toggle {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 2px solid $color-main;
+	border-radius: 3px;
+	transition: all 0.2s ease-out;
+
+	&:focus,
+	&:hover {
+		outline: none;
+		box-shadow: 0 0 5px rgba(10, 10, 10, 0.35);
+	}
+
+	&.toggled {
+		background-color: $color-main;
+		color: #fff;
+	}
+}

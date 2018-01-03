@@ -53,8 +53,8 @@ gulp.task('css', function() {
 
 /*
  *
- * js min
- * reun uglify
+ * jsmin
+ * run uglify
  */
 gulp.task('jsmin', function (cb) {
     return gulp.src('js/custom.js')

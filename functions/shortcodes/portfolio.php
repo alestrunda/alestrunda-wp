@@ -9,7 +9,7 @@ function portfolio_func( $atts ){
 	?>
     <div class="text-center">
         <ul class="list-filters" id="works-filters">
-            <li class="list-filters__item active"><a class="list-filters__link isotope-filter" data-filter="*" href="#"><?php _e( "All", 'alestrunda' ); ?></a></li>
+            <li class="list-filters__item list-filters__item--all active"><a class="list-filters__link isotope-filter" data-filter="*" href="#"><?php _e( "All", 'alestrunda' ); ?></a></li>
             <?php
             $work_taxonomies = get_terms( 'technology' );
             foreach($work_taxonomies as $work_tax) {
@@ -23,6 +23,7 @@ function portfolio_func( $atts ){
             }
             ?>
         </ul>
+        <div><button class="button-toggle" id="btn-multiple-filter" style="display:none;"><?php _e("Multiple filter", 'alestrunda'); ?></button></div>
         <div>
         	<a href="#" id="show-all-works-filters"><?php _e("Show all filters", 'alestrunda'); ?></a>
         </div>

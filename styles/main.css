@@ -65,24 +65,21 @@
     opacity: 1;
     transform: scale(1) translateY(0); } }
 
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-/**
- * 1. Change the default font family in all browsers (opinionated).
- * 2. Correct the line height in all browsers.
- * 3. Prevent adjustments of font size after orientation changes in
- *    IE on Windows Phone and in iOS.
- */
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
 html {
-  font-family: sans-serif;
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
+  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
+  /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 2 */ }
 
 /* Sections
    ========================================================================== */
@@ -164,15 +161,7 @@ a {
   /* 2 */ }
 
 /**
- * Remove the outline on focused links when they are also active or hovered
- * in all browsers (opinionated).
- */
-a:active,
-a:hover {
-  outline-width: 0; }
-
-/**
- * 1. Remove the bottom border in Firefox 39-.
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
@@ -343,12 +332,10 @@ button:-moz-focusring,
   outline: 1px dotted ButtonText; }
 
 /**
- * Change the border, margin, and padding in all browsers (opinionated).
+ * Correct the padding in Firefox.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
  * 1. Correct the text wrapping in Edge and IE.
@@ -1130,6 +1117,12 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+button {
+  color: inherit;
+  border: 0;
+  background: transparent;
+  cursor: pointer; }
 
 h1,
 h2,
@@ -2418,6 +2411,19 @@ strong {
   transition: all ease-out 0.3s; }
   .button-more:hover .button-more__icon {
     transform: rotate(360deg) scale(1.05); }
+
+.button-toggle {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid #e7ad00;
+  border-radius: 3px;
+  transition: all 0.2s ease-out; }
+  .button-toggle:focus, .button-toggle:hover {
+    outline: none;
+    box-shadow: 0 0 5px rgba(10, 10, 10, 0.35); }
+  .button-toggle.toggled {
+    background-color: #e7ad00;
+    color: #fff; }
 
 .citation {
   color: #222;
