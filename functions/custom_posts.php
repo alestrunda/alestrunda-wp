@@ -179,6 +179,7 @@ function display_work_detail_meta( $work ) {
 	$pages_list = esc_html( get_post_meta( $work->ID, 'pages_list', true ) );
 	$live_preview = esc_html( get_post_meta( $work->ID, 'live_preview', true ) );
 	$live_preview_nofollow = esc_html( get_post_meta( $work->ID, 'live_preview_nofollow', true ) ) === "true" ? true : false;
+	$github = esc_html( get_post_meta( $work->ID, 'github', true ) );
 	$wordpress = esc_html( get_post_meta( $work->ID, 'wordpress', true ) );
 	$rating = esc_html( get_post_meta( $work->ID, 'rating', true ) );
 	$rating_text = esc_html( get_post_meta( $work->ID, 'rating_text', true ) );
@@ -199,7 +200,9 @@ function display_work_detail_meta( $work ) {
     <p><input type="text" style="width:100%;" name="live_preview" value="<?php echo $live_preview; ?>"></p>
     <h4><?php _e( 'Live Preview No-follow', 'alestrunda' ); ?></h4>
     <p><input type="checkbox" name="live_preview_nofollow" value="true" <?php if($live_preview_nofollow) echo 'checked'; ?>></p>
-    <h4><?php _e( 'WordPress', 'alestrunda' ); ?></h4>
+    <h4><?php _e( 'Github', 'alestrunda' ); ?></h4>
+    <p><input type="text" style="width:100%;" name="github" value="<?php echo $github; ?>"></p>
+	<h4><?php _e( 'WordPress', 'alestrunda' ); ?></h4>
     <p><input type="text" style="width:100%;" name="wordpress" value="<?php echo $wordpress; ?>"></p>
     <h4><?php _e( 'Work Rating', 'alestrunda' ); ?></h4>
     <p><input type="number" min="0" max="10" size="10" name="rating" value="<?php echo $rating; ?>"></p>
@@ -268,6 +271,9 @@ function save_post_meta( $post_id, $post ) {
         }
 		else {
             update_post_meta( $post_id, 'live_preview_nofollow', "" );
+		}
+		if ( isset( $_POST['github'] ) ) {
+            update_post_meta( $post_id, 'github', $_POST['github'] );
         }
 		if ( isset( $_POST['wordpress'] ) ) {
             update_post_meta( $post_id, 'wordpress', $_POST['wordpress'] );

@@ -98,6 +98,13 @@ function portfolio_func( $atts ){
                                     <a class="icon-box icon-box--hover tooltip" href="<?php echo $live_preview; ?>" data-title="<?php _e('Live preview', 'alestrunda'); ?>" <?php if($live_preview_nofollow) echo 'rel="nofollow"'; ?>><i class="icon-box__icon fa fa-share"></i></a>
                                     <?php
                                 }
+
+                                $github = get_post_meta( get_the_ID(), 'github', true );
+                                if( $github ) {
+                                    ?>
+                                    <a class="icon-box icon-box--hover tooltip" href="<?php echo $github; ?>" data-title="<?php _e('Github', 'alestrunda'); ?>"><i class="icon-box__icon fa fa-github"></i></a>
+                                    <?php
+                                }
                                 
                                 $wordpress = get_post_meta( get_the_ID(), 'wordpress', true );
                                 if( $wordpress ) {
