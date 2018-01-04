@@ -303,9 +303,9 @@
     
     
 	<div id="logos">
-    	<div class="section-extra-dark section-content--tiny">
+    	<div class="section-extra-dark">
             <div class="container text-center">
-            	<div id="slider-logos" class="slick--dots-right slick--dots-bottom-out slick--dots-small slick--dots-fade slick--dots-white">
+            	<div id="slider-logos" class="slick--dots-right slick--dots-small slick--dots-fade slick--dots-white">
                     <div class="slide">
                         <div class="logo-single tooltip tooltip--top tooltip--dark" data-title="CSS3">
                             <img class="logo-single__img" alt="CSS3" height="45" src="<?php echo get_template_directory_uri(); ?>/images/logos/css3.svg">
