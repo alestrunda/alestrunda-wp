@@ -14,6 +14,14 @@
     }
 
     &::after {
+        color: $color-tooltip;
+        transform: translateX(-50%);
+        border: 5px solid transparent;
+        border-bottom-color: currentColor;
+        content: '';
+    }
+
+    &::before {
         transform: translate(-50%, 100%);
         content: attr(data-title);
         background-color: $color-tooltip;
@@ -23,14 +31,7 @@
         font-size: 12px;
         line-height: 1.4;
         padding: 3px 8px;
-    }
-
-    &::before {
-        color: $color-tooltip;
-        transform: translateX(-50%);
-        border: 5px solid transparent;
-        border-bottom-color: currentColor;
-        content: '';
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.65);
     }
 
     &:hover {
@@ -42,14 +43,14 @@
     }
 }
 
-.tooltip--dark{
+.tooltip--dark {
     &::after {
+        color: $color-tooltip-dark;
+    }
+    
+    &::before {
         color: #fff;
         background-color: $color-tooltip-dark;
-    }
-
-    &::before {
-        color: $color-tooltip-dark;
     }
 }
 
@@ -61,13 +62,13 @@
     }
 
     &::after {
-        transform: translate(-100%, 50%);
-    }
-
-    &::before {
         border-bottom-color: transparent;
         border-left-color: currentColor;
         transform: translateY(50%);
+    }
+
+    &::before {
+        transform: translate(-100%, 50%);
     }
 }
 
@@ -79,11 +80,11 @@
     }
 
     &::after {
-        transform: translate(-50%, -100%);
+        border-bottom-color: transparent;
+        border-top-color: currentColor;
     }
 
     &::before {
-        border-bottom-color: transparent;
-        border-top-color: currentColor;
+        transform: translate(-50%, -100%);
     }
 }

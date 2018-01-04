@@ -3467,6 +3467,12 @@ strong {
     pointer-events: none;
     z-index: 2000; }
   .tooltip::after {
+    color: #fff;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-bottom-color: currentColor;
+    content: ''; }
+  .tooltip::before {
     transform: translate(-50%, 100%);
     content: attr(data-title);
     background-color: #fff;
@@ -3475,46 +3481,41 @@ strong {
     white-space: nowrap;
     font-size: 12px;
     line-height: 1.4;
-    padding: 3px 8px; }
-  .tooltip::before {
-    color: #fff;
-    transform: translateX(-50%);
-    border: 5px solid transparent;
-    border-bottom-color: currentColor;
-    content: ''; }
+    padding: 3px 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.65); }
   .tooltip:hover::after, .tooltip:hover::before {
     opacity: 1;
     visibility: visible; }
 
 .tooltip--dark::after {
-  color: #fff;
-  background-color: #000; }
+  color: #000; }
 
 .tooltip--dark::before {
-  color: #000; }
+  color: #fff;
+  background-color: #000; }
 
 .tooltip--left::after, .tooltip--left::before {
   left: -10px;
   bottom: 50%; }
 
 .tooltip--left::after {
-  transform: translate(-100%, 50%); }
-
-.tooltip--left::before {
   border-bottom-color: transparent;
   border-left-color: currentColor;
   transform: translateY(50%); }
+
+.tooltip--left::before {
+  transform: translate(-100%, 50%); }
 
 .tooltip--top::after, .tooltip--top::before {
   bottom: auto;
   top: -10px; }
 
 .tooltip--top::after {
-  transform: translate(-50%, -100%); }
-
-.tooltip--top::before {
   border-bottom-color: transparent;
   border-top-color: currentColor; }
+
+.tooltip--top::before {
+  transform: translate(-50%, -100%); }
 
 .work-item {
   position: relative;
