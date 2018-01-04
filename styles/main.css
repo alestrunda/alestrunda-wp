@@ -498,11 +498,6 @@ template {
   font-weight: 300;
   font-style: normal; }
 
-*,
-*::after,
-*::before {
-  backface-visibility: hidden; }
-
 .el-center {
   margin-left: auto;
   margin-right: auto; }
