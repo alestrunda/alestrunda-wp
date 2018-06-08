@@ -72,9 +72,9 @@ gulp.task("themeinfo", function() {
 gulp.task("develop-css", gulp.series("sass", "css", "themeinfo"));
 
 //watch task
-gulp.task("watch", function() {
-  gulp.watch("src/scss/*.scss", "develop-css");
+gulp.task("watch:styles", function() {
+  gulp.watch("src/scss/*.scss", gulp.parallel("develop-css"));
 });
 
 //default task
-gulp.task("default", gulp.series("develop-css"));
+gulp.task("default", gulp.series("develop-css", "watch:styles"));
