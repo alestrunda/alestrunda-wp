@@ -21,7 +21,7 @@
 </head>
 
 <body>
-	<script><?php echo get_theme_mod( 'google_analytics_code' ); ?></script>
+	<script><?php //echo get_theme_mod( 'google_analytics_code' ); ?></script>
     
     <div id="loader-page" class="loader-page">
 		<div class="loader-page__hide"><i class="loader-page__icon fa fa-close"></i> <?php _e( 'hide loading', 'alestrunda' ); ?></div>
