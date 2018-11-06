@@ -1,6 +1,13 @@
 {
   "name": "alestrunda",
   "version": "1.1.2",
+  "author": {
+    "name": "Aleš Trunda",
+    "email": "alestrunda@gmail.com"
+  },
+  "homepage": "http://alestrunda.cz",
+  "repository": "https://github.com/alestrunda/alestrunda",
+  "private": true,
   "dependencies": {
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
