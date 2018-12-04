@@ -84,16 +84,16 @@ function portfolio_func( $atts ){
                                     <a class="icon-box icon-box--hover tooltip" href="<?php echo $buy_online; ?>" <?php if( $buy_online_scroll ) echo 'class="scroll-to"'; ?> data-title="<?php echo $buy_online_text; ?>"><i class="icon-box__icon fa fa-usd"></i></a>
                                     <?php
                                 }
-                                
+
+                                $live_preview_nofollow = get_post_meta( get_the_ID(), 'live_preview_nofollow', true ) === 'true' ? true : false;
                                 $pages_list = get_post_meta( get_the_ID(), 'pages_list', true );
                                 if( $pages_list ) {
                                     ?>
-                                    <a class="icon-box icon-box--hover tooltip" href="<?php echo $pages_list; ?>" data-title="<?php _e('List of all pages', 'alestrunda'); ?>"><i class="icon-box__icon fa fa-file-text-o"></i></a>
+                                    <a class="icon-box icon-box--hover tooltip" href="<?php echo $pages_list; ?>" data-title="<?php _e('List of all pages', 'alestrunda'); ?>" <?php if($live_preview_nofollow) echo 'rel="nofollow"'; ?>><i class="icon-box__icon fa fa-file-text-o"></i></a>
                                     <?php
                                 }
                                 
                                 $live_preview = get_post_meta( get_the_ID(), 'live_preview', true );
-                                $live_preview_nofollow = get_post_meta( get_the_ID(), 'live_preview_nofollow', true ) === 'true' ? true : false;
                                 if( $live_preview ) {
                                     ?>
                                     <a class="icon-box icon-box--hover tooltip" href="<?php echo $live_preview; ?>" data-title="<?php _e('Live preview', 'alestrunda'); ?>" <?php if($live_preview_nofollow) echo 'rel="nofollow"'; ?>><i class="icon-box__icon fa fa-share"></i></a>
