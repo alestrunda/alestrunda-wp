@@ -40,6 +40,15 @@
     }
 }
 
+.heading-mid {
+    font-size: 24px;
+    margin-bottom: 15px;
+
+    @include break(sm) {
+        text-align: center;
+    }
+}
+
 .heading-page {
 	color: #fff;
 	font-size: 24px;

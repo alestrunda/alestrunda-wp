@@ -1,0 +1,16 @@
+.label {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 6px;
+  margin-right: 2px;
+  border-radius: 5px;
+}
+
+.label--right-big {
+  margin-right: 15px;
+}
+
+.label--yellow {
+  background-color: $color-main;
+  color: #fff;
+}

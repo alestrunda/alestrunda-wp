@@ -69,12 +69,16 @@
     }
 
 .box-info__detail {
+    display: flex;
+    align-items: center;
 	color: $color-gray-light;
 }
 
 .box-info__icon {
-    margin-right: 8px;
-	margin-bottom: 5px;
+    align-self: flex-start;
+    margin-right: 12px;
+    flex: none;
+    margin-bottom: 10px;
 }
 
 .box-service {

@@ -66,6 +66,55 @@
 	content: '\f19a';
 }
 
+.icon-opening-big {
+    display: flex;
+    margin-bottom: 20px;
+
+    @include break(sm) {
+        flex-wrap: wrap;
+    }
+}
+
+.icon-opening-big__content {
+    padding-left: 50px;
+    flex: 1;
+    align-self: center;
+
+    @include break(md) {
+        padding-left: 30px;
+    }
+
+    @include break(sm) {
+        padding-left: 0;
+    }
+}
+
+.icon-opening-big__icon {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 250px;
+    flex: none;
+    display: flex;
+    justify-content: center;
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    @include break(lg) {
+        width: 180px;
+    }
+
+    @include break(md) {
+        width: 100px;
+    }
+
+    @include break(sm) {
+        width: 100%;
+    }
+}
+
 .icon-simple {
     position: relative;
     margin-right: 10px;

@@ -2312,11 +2312,15 @@ strong {
   border: 0; }
 
 .box-info__detail {
+  display: flex;
+  align-items: center;
   color: #ccc; }
 
 .box-info__icon {
-  margin-right: 8px;
-  margin-bottom: 5px; }
+  align-self: flex-start;
+  margin-right: 12px;
+  flex: none;
+  margin-bottom: 10px; }
 
 .box-service {
   position: relative;
@@ -2639,6 +2643,13 @@ strong {
     .heading-box__title--huge {
       font-size: 26px; } }
 
+.heading-mid {
+  font-size: 24px;
+  margin-bottom: 15px; }
+  @media (max-width: 480px) {
+    .heading-mid {
+      text-align: center; } }
+
 .heading-page {
   color: #fff;
   font-size: 24px;
@@ -2717,6 +2728,44 @@ strong {
 .icon-opening--wp::after {
   content: '\f19a'; }
 
+.icon-opening-big {
+  display: flex;
+  margin-bottom: 20px; }
+  @media (max-width: 480px) {
+    .icon-opening-big {
+      flex-wrap: wrap; } }
+
+.icon-opening-big__content {
+  padding-left: 50px;
+  flex: 1;
+  align-self: center; }
+  @media (max-width: 767px) {
+    .icon-opening-big__content {
+      padding-left: 30px; } }
+  @media (max-width: 480px) {
+    .icon-opening-big__content {
+      padding-left: 0; } }
+
+.icon-opening-big__icon {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 250px;
+  flex: none;
+  display: flex;
+  justify-content: center; }
+  .icon-opening-big__icon img {
+    display: block;
+    max-width: 100%; }
+  @media (max-width: 1024px) {
+    .icon-opening-big__icon {
+      width: 180px; } }
+  @media (max-width: 767px) {
+    .icon-opening-big__icon {
+      width: 100px; } }
+  @media (max-width: 480px) {
+    .icon-opening-big__icon {
+      width: 100%; } }
+
 .icon-simple {
   position: relative;
   margin-right: 10px;
@@ -2747,6 +2796,20 @@ strong {
 
 .input-textarea {
   height: 160px; }
+
+.label {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 6px;
+  margin-right: 2px;
+  border-radius: 5px; }
+
+.label--right-big {
+  margin-right: 15px; }
+
+.label--yellow {
+  background-color: #e7ad00;
+  color: #fff; }
 
 .link-box {
   position: relative;
