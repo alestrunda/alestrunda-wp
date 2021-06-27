@@ -1,2 +1,3 @@
-# alestrunda
-My personal website on WordPress
+# WordPress theme alestrunda
+
+My personal website on WordPress.
